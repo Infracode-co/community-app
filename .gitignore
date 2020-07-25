@@ -38,3 +38,6 @@ gems.locked
 .grunt/
 bin/
 *.cache
+gradlew
+gradlew.bat
+gradle

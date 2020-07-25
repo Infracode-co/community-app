@@ -44,7 +44,7 @@
                     }
                 });
             }
-            
+
 
 
             scope.$on('scrollbar.show', function(){
@@ -55,8 +55,8 @@
                 });
 
             uiConfigService.init(scope);
-            
-            
+
+
             scope.$on('configJsonObj',function(e,response){
                 scope.response = response;
             });
@@ -215,9 +215,7 @@
                 location.path('/search/' + searchString).search({exactMatch: exactMatch, resource: scope.currentScope.value});
 
             };
-            scope.text = '<span>Mifos X is designed by the <a href="http://www.openmf.org/">Mifos Initiative</a>.' +
-            '<a href="http://mifos.org/resources/community/"> A global community </a> that aims to speed the elimination of poverty by enabling Organizations to more effectively and efficiently deliver responsible financial services to the world’s poor and unbanked </span><br/>' +
-            '<span>Sounds interesting?<a href="http://mifos.org/take-action/volunteer/"> Get involved!</a></span>';
+            scope.text = '<span>Infracode MFI is designed by the <a href="https://www.infracode.co/">Infracode</a>.</span>'
 
             scope.logout = function () {
                 $rootScope.$broadcast("OnUserPreLogout");
@@ -345,6 +343,7 @@
                 };
             scope.helpf = function()
             {
+                window.open("https://www.infracode.co/contact/");
                 // first, create addresses array
             var addresses = ["https://mifosforge.jira.com/wiki/display/docs/User+Setup","https://mifosforge.jira.com/wiki/display/docs/Organization",
                 "https://mifosforge.jira.com/wiki/display/docs/System", "https://mifosforge.jira.com/wiki/dosearchsite.action?queryString=products&startIndex=0&where=docs",
